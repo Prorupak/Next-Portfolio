@@ -1,0 +1,21 @@
+{
+    "printWidth": 120,
+    "tabWidth": 4,
+    "singleQuote": false,
+    "trailingComma": "all",
+    "semi": true,
+    "arrowParens": "avoid",
+    "endOfLine": "crlf",
+    "importOrder": [
+        "^react$",
+        "^(?!^react$|^@/|^[./]).*",
+        "^@/(.*)$",
+        "^[./]"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true,
+    "importOrderParserPlugins": [
+        "jsx",
+        "typescript"
+    ]
+}

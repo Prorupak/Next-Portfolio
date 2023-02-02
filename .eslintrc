@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "extends": ["next/core-web-vitals", "plugin:tailwindcss/recommended",  "plugin:prettier/recommended"],
+  "plugins": ["unused-imports"],
+  "ignorePatterns": [".next", "__ENV.js"],
+
+  "rules": {
+    // Prettier
+      "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+    // Next.js
+    "@next/next/no-img-element": "off",
+    "@next/next/no-sync-scripts": "off",
+
+    // React Hooks
+    "react-hooks/exhaustive-deps": "off",
+
+    // Unused Imports
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "none",
+        "varsIgnorePattern": "^_",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+
+    // Tailwind CSS
+    "tailwindcss/no-custom-classname": ["warn", { "whitelist": ["preview-mode", "printer-mode", "markdown"] }]
+  }
+}
