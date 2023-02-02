@@ -26,7 +26,5 @@
       }
     ],
 
-    // Tailwind CSS
-    "tailwindcss/no-custom-classname": ["warn", { "whitelist": ["preview-mode", "printer-mode", "markdown"] }]
   }
 }
